@@ -1,0 +1,160 @@
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #093c6f;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #e9e3f0;
+}
+
+main {
+    padding: 20px;
+}
+
+.home-banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-image {
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-form label {
+    margin: 5px 0;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form button {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.features,
+.our-package,
+.closing-argument {
+    margin: 40px 0;
+}
+
+.package-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.package-item {
+    width: 48%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    color: #f3cdf8;
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #05305e;
+    color: #f8baf6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Responsif */
+@media (min-width: 768px) {
+    .banner-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .home-banner .banner-image {
+        width: 60%;
+    }
+
+    .home-banner .contact-form {
+        width: 35%;
+    }
+
+    .package-item {
+        width: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-content {
+        flex-direction: column;
+    }
+
+    .home-banner .banner-image,
+    .home-banner .contact-form {
+        width: 100%;
+    }
+
+    .package-item {
+        width: 100%;
+    }
+}
